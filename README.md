@@ -26,6 +26,7 @@ https://youtu.be/iZjjb2xS-Ww
 	#### Any Aplication
 	element(by.id('name'));
 	element(by.css('.myClass'));  element(by.css('#myId'));
+	element(by.css('md-tab-item:nth-child(1)'));
 	element(by.className('myClass'));
 	element(by.cssContainingText('div a','Link'));
 	element(by.buttonText('Login'));
