@@ -3,8 +3,18 @@
 ## Simple start
 http://www.protractortest.org/#/
 
+```
+webdriver-manager update && webdriver-manager start
+protractor config.js
+```
+
 ## Overview
 https://www.youtube.com/watch?v=zpwQ8vAXhJ0
+
+https://youtu.be/aQipuiTcn3U
+
+https://youtu.be/iZjjb2xS-Ww
+
 
 ### [Finding](http://www.protractortest.org/#/api?view=ProtractorBy) 
 	#### Angular Aplication
@@ -34,10 +44,20 @@ https://www.youtube.com/watch?v=zpwQ8vAXhJ0
 	expect(el.isDisplayed()).toBe(true);
 	expect(el.isPresent()).toBe(true);
 	
-### [ExpectedConditions] (http://www.protractortest.org/#/api?view=ProtractorExpectedConditions)
+### [ExpectedConditions](http://www.protractortest.org/#/api?view=ProtractorExpectedConditions)
 	var isClickable = EC.elementToBeClickable(button);
 
-###[Debugging] (https://github.com/angular/protractor/blob/master/docs/debugging.md)
+### [Debugging](https://github.com/angular/protractor/blob/master/docs/debugging.md)
 	browser.pause()          Then run the test normally
     browser.debugger()       Then run the test in debug mode: `protractor debug yourTest.js`
 
+### [Element Explorer](https://www.youtube.com/watch?v=ZLO6bDaRip4)
+    ./node_modules/protractor/bin/elementexplorer.js   This is a console to test your comands
+    
+### [Page Objects](https://github.com/angular/protractor/blob/master/docs/page-objects.md#with-pageobjects)
+
+
+### [Docker](https://hub.docker.com/r/grm78/protractor/)
+```
+docker run --rm -v <test project location>:/project grm78/protractor
+```
